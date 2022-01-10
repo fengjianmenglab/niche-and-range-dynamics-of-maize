@@ -1,0 +1,7 @@
+library(PresenceAbsence)
+setwd("H:/ty_jm")
+pa<-read.csv('80/pa.csv/100pa.csv')
+threshlod<-optimal.thresholds(pa)
+head(threshlod)
+setwd("H:/ty_jm/80/100")
+write.csv(threshlod,'./threshold100.csv')
